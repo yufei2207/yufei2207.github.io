@@ -1,33 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-	<link href="https://fonts.font.im/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link href="styles/style.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/nor.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>树丰装饰</title> 
+<style>
+#example1 {
+    //border: 10px dotted black;
+    padding:35px;
+    background: #115d36;
+}
 
-  </head>
-  <body>
-	<h1>Mozilla is cool</h1>
-    <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
+#example2 {
+    //border: 10px dotted black;
+    padding:35px;
+    background: white;
+    background-clip: padding-box;
+}
 
-    <p>At Mozilla, we’re a global community of</p>
+#example3 {
+    border: 10px dotted black;
+    padding:35px;
+    background: yellow;
+    background-clip: content-box;
+}
+</style>
+</head>
+<body>
+    <div id="example1">
+        <p style = "font-family:arial;color:white;font-size:72px;"><b>599产品 <br> 空间材料配置</b></p>
+        <p style = "font-family:arial;color:white;font-size:36px;">品类型号 一目了然</p>
 
-    <ul> <!-- changed to list in the tutorial -->
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ul>
+        <div id="example2">
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
 
-    <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. 
-      We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+        <p>没有背景剪裁 (border-box没有定义):</p>
+        <div id="example1">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
 
-    <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> 
-      to learn even more about the values and principles that guide the pursuit of our mission.</p>
+        <p>background-clip: padding-box:</p>
+        <div id="example2">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
 
-	<button> 切换用户 </button>
-	
-	<script src="scripts/main.js" defer></script>
+        <p>background-clip: content-box:</p>
+        <div id="example3">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
 
-  </body>
+    </div>
+
+</body>
 </html>
